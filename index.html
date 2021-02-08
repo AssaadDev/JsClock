@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="clockSpace">
+        <div class="clockTitle" id="ct">
+            <h1 id="title">aLIJA BIBER</h1>
+        </div>
+        <div class="clock">
+            <span id="clck"></span>
+        </div>
+
+        <div class="alarm" class="ala">
+            <p>Set the alarm for weaking up</p>
+            <div class="setter">
+                <input type="number" id="ah" placeholder="23" min="0" max="23"> : <input type="number" id="am" placeholder="59" min="0" max="59">
+            </div>
+            <button id="btn" onclick="setAlarm()">Set</button>
+        </div>
+        <div class="alarm">
+            <p class="shot">Set the alarm for nap</p>
+            <div class="setter">
+                <input type="number" id="nh" placeholder="23" min="0" max="23"> : <input type="number" id="nm" placeholder="59" min="0" max="59">
+            </div>
+            <button id="btn" onclick="setNap()">Set</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
